@@ -52,7 +52,7 @@ const server = http.createServer(function(request, response) {
     serveStatic(response, cache, absPath);
 });
 
-server.listen(3000, () => {
+server.listen(process.env.PORT, () => {
     console.log(`Server listening on port ${3000}`);
 });
 
